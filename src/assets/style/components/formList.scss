@@ -1,0 +1,15 @@
+.list-container{
+    margin: 5px 0px;
+}
+.form{
+    direction: ltr !important;
+}
+
+.list-title{
+    padding: 5px 0px;
+    span{
+        text-transform: capitalize;
+        font-weight: 400;
+        font-size: 14px;
+    }
+}

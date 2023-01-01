@@ -1,12 +1,12 @@
 import { shallowMount } from "@vue/test-utils";
-import HelloWorld from "@/components/HelloWorld.vue";
+import Form from "@/components/form.vue";
 
-describe("HelloWorld.vue", () => {
-  it("renders props.msg when passed", () => {
-    const msg = "new message";
-    const wrapper = shallowMount(HelloWorld, {
-      propsData: { msg },
+describe("Form.vue", () => {
+  it("renders message when form submitted", () => {
+    const msg = "There Are No Selected Data To Submit";
+    const wrapper = shallowMount(Form, {
+      
     });
-    expect(wrapper.text()).toMatch(msg);
+    expect(wrapper.find('.el-message--error p').text()).toMatch(msg);
   });
 });

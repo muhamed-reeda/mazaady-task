@@ -1,0 +1,353 @@
+@import "../const/variables.scss";
+p{
+    font-size: 14px;
+}
+.box{
+    margin-top: 15px;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+}
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.layout-main-container{
+    background-color: rgb(250, 250, 250);
+    .right-side{
+        padding: 25px 0px;        
+        .product-details-container{
+            height: fit-content;
+            position: relative;
+            background-color: #fff;
+            .header-section{
+                position: absolute;
+                top: 20px;
+                ul{
+                    list-style: none;
+                    display: flex; 
+                    padding-left: 0;                   
+                }
+                .actions-container{
+                    
+                    ul{
+                        justify-content: space-evenly;
+                        align-items: center;
+                        margin: 0;
+                        margin-left: 15px;
+                        li{
+                        width: 35px;
+                        height: 35px;
+                        border-radius: 100%;
+                        text-align: center;
+                        line-height: 42px;
+                        cursor: pointer;
+                        background-color: rgba($color: #000000, $alpha: 0.3);
+                        
+                            color: rgba($color: #fff, $alpha: 0.8);
+                        
+                    }}
+                }
+                .statistics-container{
+                    ul{
+                        width: fit-content;
+                        padding: 0;
+                        margin: 0px 10px;
+                        border-radius: 5px;
+                        overflow: hidden;
+                        li{
+                            background-color: rgba($color: #000000, $alpha: 0.3);
+                            padding: 6px;
+                            border-right: solid 1px gray;
+                            height: 30px;
+                            color: white;
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+            .image-slide{
+                width: fit-content;
+                background-color: #fff;
+                position: absolute;
+                right: -65px;
+                .image{
+                    width: 60px;
+                    height: 60px;
+                    overflow: hidden;
+                    border: solid 2px #fff;
+                    border-radius: 4px;
+                    cursor: pointer;
+                    transition: .3s;
+                    &:hover{
+                        border: solid 1px $sec-color;
+                        transition: .3s;
+                    }
+                    img{
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+            .product-image-contianer{
+                width: 100%;
+                height: 350px;
+                background-color: salmon;
+                overflow: hidden;
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            .product-details{
+                padding: 0px 10px;
+                .seller-details{     
+                    .seller{
+                        display: flex;
+                        padding: 10px;
+                        align-items: flex-end;
+                        .el-rate{
+                            height: 40px;
+                            line-height: 0;
+                            margin-right: 20px;
+                        }
+                        .image{
+                            width: 40px;
+                            height: 40px;
+                            border-radius: 100%;
+                            overflow: hidden;
+                            margin-left: 12px;
+                            img{
+                                width: 100%;
+                            }
+                        }
+                        .info{
+                            line-height: 20px;
+                            h5{
+                                font-size: 14px;
+                                margin: 0;
+                            }
+                            span{
+                                font-size: 12px;
+                            }
+                        }
+                    }
+                }
+                .details-section{
+                    h4{
+                        font-size: 20px;
+                        font-weight: 500;
+                    }
+                    span{
+                        font-size: 12px;
+                    }
+                }
+                .section-footer{
+                    .prices{
+                        .price{
+                            width: 70px;
+                            height: 35px;
+                            text-align: center;
+                            line-height: 40px;
+                            background-color: $sec-color;
+                            margin-left: 5px;
+                            color: $main-color;
+                            cursor: pointer;
+                        }
+                    }
+                    .confirm-price{
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        button{
+                            border: 0px;
+                            padding: 7px 12px;
+                            background-color: $main-color;
+
+                            color: white;
+                        }
+                    }
+                }
+            }
+        }
+        .massage-section{
+            background-color: white;
+            margin-top: 20px;
+            padding: 20px;
+            .section-title{
+                h3{
+                    font-size: 18px;
+                }
+            }
+            .send-message-sec{
+                .message{
+                    input{
+                        border-radius: 20px;
+                        background-color: rgb(250, 250, 250);
+                    }
+                }
+                .send-message{
+                    text-align: center;
+                    padding: 0;
+                    button{
+                        background-color: $main-color;
+                        border: none;
+                    }
+                }
+            }
+        }
+        .auction-details-section{
+            margin-top: 20px;
+            padding: 20px;
+            background-color: white;
+            .auction-details{
+                h4{
+                    font-size: 18px;
+                }
+            }
+            .details{
+                margin-top: 20px;
+                ul{
+                    padding: 0;
+                    margin: 0;
+                    list-style: none;
+                    
+                    li{
+                        margin-bottom: 3px;
+                        text-align: right;
+                        svg{
+                            margin-left: 5px;
+                        }
+                        ul{
+                            justify-content: space-between;
+                        } 
+                    }
+                }
+            }
+        }
+    }
+    .left-side{
+        padding: 25px;   
+        .auction-details{
+            background-color: white;
+            padding: 10px;
+            border-radius: 10px;
+            .auction-date{
+                background-color: #222;
+                color: #fff;
+                padding: 5px 10px;
+                border-radius: 5px;
+                ul{
+                    list-style: none;
+                    padding: 0;
+                    margin: 0;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                }
+            }
+            .auction-budget{
+                margin-top: 5px;
+                display: flex;
+                .current-budget{
+                    text-align: center;
+                    border-radius: 5px;
+                    line-height: 25px;
+                    color: #fff;
+                    .box{
+                        margin: 2px;
+                        padding: 5px;
+                        border-radius: 8px;
+                        background-color: #44215d;
+                    }
+                    h3{
+                        margin-top: 10px;
+                    }
+                }
+                .budget-value{
+                    @extend .current-budget;
+                    .box{
+                        background-color: #f1ddff;   
+                    color: #44215d;
+                    }
+                }
+            }
+            
+        }
+        .contenders-main-container{
+            .contenders{
+                .contender{
+                    margin-top: 15px;
+                    .info{
+                        .row{
+                            flex-wrap:nowrap;
+                            margin: 0;
+                            .contender-img{
+                                width: 40px;
+                                height: 40px;
+                                overflow: hidden;
+                                padding: 0px;
+                                border-radius: 100%;
+                                img{
+                                    width: 100%;
+                                }
+                            }
+                            .contender-info{
+                                line-height: 22px;
+                                padding-top: 5px;
+                                h4{
+                                    font-size: 14px;
+                                    margin: 0;
+                                }
+                                span{
+                                    font-size: 12px;
+                                }
+                            }
+                        }
+                    }
+                    .amount{
+                        text-align: left;
+                        display: flex;
+                        flex-direction: row-reverse;
+                        align-items: center;
+                        span{
+                            background-color: rgba(255, 165, 0, 0.3);
+                            padding: 8px 5px 5px;
+                            border-radius: 5px;
+                            font-weight: bold;
+                            color: orange;
+                            line-height: 18px;
+                        }
+                    }
+                }
+            }
+        }
+        .auction-values-container{
+            .value{
+                background-color: #DDD;
+                border-radius: 10px;
+                height: fit-content;
+                overflow: hidden;
+                &:nth-child(n+2){
+                    margin-top: 10px;
+                }
+                ul{
+                    padding: 10px;
+                    margin: 0px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    li{
+                        span{
+                            font-size: 14px;
+                        }
+                    }
+                    .price{
+                        margin-top: 5px;
+                    }
+                }
+            }
+        }
+    }
+}

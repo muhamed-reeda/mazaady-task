@@ -1,0 +1,100 @@
+@import "../const/global.scss";
+@import "../const/variables.scss";
+.navbar-container{
+    overflow: hidden;
+    padding: 15px 0px;
+    direction: ltr;
+    .logo-container{
+        img{
+            width: 200px;
+        }
+    }
+    .search-inputs-container{
+        .search-inputs-group{
+            height: 100%;
+            display: flex;
+            align-items: center;
+            flex-direction: row-reverse
+        }
+        .el-select{
+            direction: rtl;
+            input{
+                background-color: $sec-color;
+                border: none;
+                border-top-left-radius: 0;
+                border-bottom-left-radius: 0;
+                color: $main-color;
+                font-weight: bold;
+                &::placeholder{
+                    color: $main-color;
+                    font-weight: bold;
+                }
+            }
+            .el-input__suffix{
+                left: 5px !important;
+                right: unset;
+                i{
+                    color: $main-color;
+                }
+            }
+        }
+        .search-input{
+            direction: rtl;
+            input{
+                background-color: $sec-color;
+                border: none;
+                border-top-right-radius: 0;
+                border-bottom-right-radius: 0;
+                border-right: solid 1px white;
+                color: $main-color;
+                &::placeholder{
+                    color: $main-color;
+                    font-weight: bold;
+                }
+            }
+        }
+        .search-btn{
+            position: relative;
+            right: -50px;
+            background-color: $main-color;
+            border: 0;
+            color: white;
+        }
+    }
+
+}
+.menu-container{
+    background-color: $main-color;
+    .row{
+        height: 80px;
+        align-items: center
+    }
+    .menu-side{
+        .menu-list{
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: space-between;
+            li{
+                color: #fff;
+                cursor: pointer;
+            }
+        }
+    }
+    .actions-side{
+        direction: ltr;
+        .actions-list{
+            list-style: none;
+            display: flex;
+            padding: 0;
+            margin: 0;
+            justify-content: space-between;
+            align-items: center;
+            .list-option{
+                color: white;
+                cursor: pointer;
+            }
+        }
+    }
+}
